@@ -58,52 +58,17 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="">
+    <div class="row">
 
       
       <!-- /.col-lg-3 -->
 
-      <div class="">
-        <h5 class="my-4 cool-font">Daily Spots</h5>
-        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.surfer.com%2Ffeatures%2Fworlds-best-waves-hossegor%2F&psig=AOvVaw0JW90MtMgSCTF32n-GbGrz&ust=1607962967347000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLia9f6uy-0CFQAAAAAdAAAAABAD">
-              <img class="d-block img-fluid" src="https://i2.wp.com/www.surfer.com/wp-content/uploads/2017/06/Hossegor_France_Testemale.jpg?resize=1200%2C600&ssl=1" alt="First slide">
-              </a>
-            </div>
-            <div class="carousel-item">
-                <a href="https://www.sansebastianturismoa.eus/en/blog/sport-city/984-the-waves-of-la-zurriola">
-              <img class="d-block img-fluid" src="https://spot-thumbnails.cdn-surfline.com/spots/5842041f4e65fad6a7708e74/5842041f4e65fad6a7708e74_1500.jpg" alt="Second slide">
-                </a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://surfsimply.com/travel/the-freight-train-a-celebration-of-mundaka/"> 
-              <img class="d-block img-fluid" src="https://noticiasdomar.com.br/wp-content/uploads/2015/05/Mundaka-Foto-Oscar-Diego-e1432491214712.jpg" alt="Third slide">
-              </a>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <h5 class="my-4 cool-font">Highlights - Stay Tuned:</h5>
+      <div >
+        <h5 class="my-4 cool-font">Products:</h5>
         <div class="row">
 
            
-            <?php 
-
-            foreach ($products as $product): ?>
+            <?php foreach ($products as $product): ?>
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card h-100 cool-card">
