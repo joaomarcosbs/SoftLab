@@ -62,7 +62,7 @@
       
       <!-- /.col-lg-3 -->
 
-      <div class="col-md-6" style="margin-left: 35%;">
+      <div class="col-md-6" style="margin-left: 33.4%; margin-top: 8%;">
         <div class="col-md-8 cool-sign-up">
             <h5 class="cool-font">Contact Us</h5>
 
@@ -95,7 +95,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="footer">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>

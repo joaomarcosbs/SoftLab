@@ -57,7 +57,7 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
+    
 
       
       <!-- /.col-lg-3 -->
@@ -86,14 +86,14 @@
       </div>
       <!-- /.col-lg-9 -->
 
-    </div>
+    
     <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>

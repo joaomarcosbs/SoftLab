@@ -29,10 +29,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./?page=home">Home
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="./?page=categories&category=1">Surfboards</a>
+              <a class="dropdown-item" href="./?page=categories&category=2">Wetsuites</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -55,48 +57,29 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
-
-      <div class="col-lg-3">
-
-        <h5 class="my-4 cool-font">BW Surf Shop</h5>
-        <div class="list-group">
-          <a href="./?page=categories&category=1" class="list-group-item cool-menu">Surfboards</a>
-          <a href="./?page=categories&category=2" class="list-group-item cool-menu">Wetsuites</a>
-        </div>
-
-      </div>
+    
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9">
+      <div class="col-lg-6" style="margin-left: 34%; margin-top: 7%;">
         <div class="col-md-8 cool-sign-up">
             <h5 class="cool-font">Sign Up Here</h5>
 
             <form action="./?page=sign-up" method="post">
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text cool-form" id="inputGroup-sizing-default">Name</span>
-                    </div>
-                    <input type="text" class="form-control cool-form" name="name">
+                    <input type="text" class="form-control" placeholder="Name" name="name">
                 </div>
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text cool-form" id="inputGroup-sizing-default">E-mail</span>
-                    </div>
-                    <input type="email" class="form-control cool-form" name="email">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
 
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text cool-form" id="inputGroup-sizing-default">Password</span>
-                    </div>
-                    <input type="password" class="form-control cool-form" name="password">
+                    <input type="password" class="form-control" placeholder="Password" name="password">
                 </div>
 
-                <button type="submit" class="cool-button" style="float: right; width: 100%;">Sign up</button>
-            </form>
+                <button class="btn btn-lg btn-primary btn-block cool-button" type="submit">Sign up</button>
+              </form>
 
         </div>
 
@@ -107,14 +90,14 @@
       </div>
       <!-- /.col-lg-9 -->
 
-    </div>
+    
     <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="footer">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>

@@ -23,16 +23,18 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Basque Waves Surf Shop</a>
+      <a class="navbar-brand" href="./?page=home">Basque Waves Surf Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./?page=home">Home
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="./?page=categories&category=1">Surfboards</a>
+              <a class="dropdown-item" href="./?page=categories&category=2">Wetsuites</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
@@ -57,15 +59,6 @@
 
     <div class="row">
 
-      <div class="col-lg-3">
-
-        <h5 class="my-4 cool-font">BW Surf Shop</h5>
-        <div class="list-group">
-          <a href="./?page=categories&category=1" class="list-group-item cool-menu">Surfboards</a>
-          <a href="./?page=categories&category=2" class="list-group-item cool-menu">Wetsuites</a>
-        </div>
-
-      </div>
       <!-- /.col-lg-3 -->
 
      <div class="col-lg-9">
@@ -98,7 +91,7 @@
 
         </ul>
 
-        <h3 class="total">Total Amount: $ <?php echo number_format($cart->total(), 2,'.'); ?></h3>
+        <h3 class="total cool-font">Total Amount: $ <?php echo number_format($cart->total(), 2,'.'); ?></h3>
 
     </div>
 
@@ -115,7 +108,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>

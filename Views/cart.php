@@ -23,22 +23,28 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Basque Waves Surf Shop</a>
+      <a class="navbar-brand" href="./?page=home">Basque Waves Surf Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./?page=home">Home
-              <span class="sr-only">(current)</span>
-            </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="./?page=categories&category=1">Surfboards</a>
+              <a class="dropdown-item" href="./?page=categories&category=2">Wetsuites</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <?php if(isset($_SESSION['authenticated'])): ?>
+                    <a class="nav-link" href="./?page=log-out">Log Out</a>
+            <?php else: ?> 
+                    <a class="nav-link" href="./?page=login">Log In</a>
+            <?php endif; ?>        
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./?page=contact">Contact</a>
@@ -51,17 +57,7 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
-
-      <div class="col-lg-3">
-
-        <h5 class="my-4 cool-font">BW Surf Shop</h5>
-        <div class="list-group">
-          <a href="./?page=categories&category=1" class="list-group-item cool-menu">Surfboards</a>
-          <a href="./?page=categories&category=2" class="list-group-item cool-menu">Wetsuites</a>
-        </div>
-
-      </div>
+    
       <!-- /.col-lg-3 -->
 
      <div class="col-lg-9">
@@ -86,7 +82,7 @@
 
 	           				<?php foreach ($cart->getProduct() as $product): ?>
 
-		                		<li class="list-group-item d-flex flex-column flex-md-row align-items-center">
+		                		<li class="list-group-item d-flex flex-column flex-md-row align-items-center" style="width: 1000px;">
 		                   				<div class="col-md-3">
 		                        				<img src="<?php echo $product->image; ?>" width="100%" 3alt="">
 		                    			</div>
@@ -98,11 +94,11 @@
 
 		                        				<div class="cool-quantity-box">
 		                        					<input disabled value="<?php echo $product->quantity; ?>">
-		                            				<a href="./?page=add-cart&id=<?php echo $product->id; ?>" class="cool-button">+</a>
-		                            				<a href="./?page=remove-quantity&id=<?php echo $product->id; ?>" class="cool-button">-</a>
+		                            				<a href="./?page=add-cart&id=<?php echo $product->id; ?>" class="cool-button" style="border-radius: 10px;">+</a>
+		                            				<a href="./?page=remove-quantity&id=<?php echo $product->id; ?>" class="cool-button" style="border-radius: 10px; width: 39px;">-</a>
 		                        				</div>
-		                        				<div class="cool-remove-button">
-		                        				<a href="./?page=remove-product&id=<?php echo $product->id; ?>" class="cool-button">Remove</a>
+		                        				<div style="margin-top: 10px;">
+		                        				<a href="./?page=remove-product&id=<?php echo $product->id; ?>" class="btn btn-lg btn-primary btn-block cool-button" >Remove</a>
 		                        				</div>	
 		                    			</div>
 
@@ -119,7 +115,7 @@
 	        <div class="end-purchase">		
 	        		<h5 class="cool-font">Total: $ <?php echo number_format($cart->total(), 2, ',', '.'); ?></h5>
 
-	        		<a href="./?page=end-purchase" class="cool-button">Purchase</a>
+	        		<a href="./?page=end-purchase" class="cool-button" style="border-radius: 10px;">Purchase</a>
 	        </div>		
 	    </div>
 
@@ -136,7 +132,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>

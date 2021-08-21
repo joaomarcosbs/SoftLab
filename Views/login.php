@@ -59,21 +59,22 @@
 
     
       <!-- /.col-lg-3 -->	
-      <div class="col-md-6" style="margin-left: 35%;">
+      <div class="col-md-6" style="margin-left: 33.4%; margin-top: 9%;">
         <div class="col-md-8 cool-sign-up">
             <h5 class="cool-font">Sign in Here</h5>
 
-            <form action="./?page=log-in" method="post">   
-                <label for="inputEmail" class="sr-only">Email</label>
+            <form action="./?page=log-in" method="post">  
+              
+              <div class="input-group mb-3">
                 <input type="email" class="form-control" placeholder="Email" name="email" required="" autofocus="">
-                <br>
-                <label for="inputPassword" class="sr-only">Password</label>
+              </div>  
+              
+              <div class="input-group mb-3">
                 <input type="password" name="password" class="form-control" placeholder="Password" required="">
-                <br>
-                <br>
+              </div>
+
                 <button class="btn btn-lg btn-primary btn-block cool-button" type="submit">Sign in</button>
     
-
             </form>
 
         </div>
@@ -92,7 +93,7 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="footer">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Basque Surf Co</p>
     </div>
